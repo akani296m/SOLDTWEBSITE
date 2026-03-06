@@ -40,17 +40,27 @@
         },
     ];
 
-    const integrations = [
-        "Paystack",
-        "Yoco",
-        "SnapScan",
-        "Ozow",
-        "The Courier Guy",
-        "Pargo",
-        "Bob Go",
-        "WhatsApp",
-        "Google Analytics",
-        "Xero",
+    const logos = [
+        {
+            src: "/logos/idSL4BuSLF_1772554245976.png",
+            alt: "Paystack",
+            bg: false,
+        },
+        {
+            src: "/logos/idRtuYI1UJ_logos.jpeg",
+            alt: "Payfast by Network",
+            bg: false,
+        },
+        {
+            src: "/logos/idUgAWkn0x_1772554320044.jpeg",
+            alt: "Peach Payments",
+            bg: true,
+        },
+        {
+            src: "/logos/id9wjmXiU8_1772554331016.jpeg",
+            alt: "Aramex",
+            bg: true,
+        },
     ];
 
     const stats = [
@@ -62,7 +72,9 @@
 </script>
 
 <svelte:head>
-    <title>SOLDT – Sell Online in South Africa | All-in-One eCommerce Platform</title>
+    <title
+        >SOLDT – Sell Online in South Africa | All-in-One eCommerce Platform</title
+    >
     <meta
         name="description"
         content="SOLDT is South Africa's all-in-one eCommerce platform. Launch your online store, accept payments, manage shipping, and grow your brand — all from one place. Start free."
@@ -177,22 +189,37 @@
 </section>
 
 <!-- ───── Integrations Strip ───── -->
-<section id="integrations" class="border-y border-zinc-200/60 bg-white py-16">
-    <div class="mx-auto max-w-7xl px-6">
-        <p
-            class="text-center text-sm font-medium uppercase tracking-wider text-zinc-400"
-        >
-            Trusted integrations
-        </p>
-        <div
-            class="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-4"
-        >
-            {#each integrations as name}
-                <span
-                    class="font-display text-lg font-semibold text-zinc-300 transition-colors hover:text-primary"
-                >
-                    {name}
-                </span>
+<section
+    id="integrations"
+    class="border-y border-zinc-200/60 bg-white py-16 overflow-hidden"
+>
+    <p
+        class="text-center text-sm font-medium uppercase tracking-wider text-zinc-400 mb-10"
+    >
+        Trusted integrations
+    </p>
+
+    <div class="marquee-track" aria-hidden="true">
+        <div class="marquee-inner">
+            <!-- First set -->
+            {#each logos as logo}
+                <div class="logo-item">
+                    <img
+                        src={logo.src}
+                        alt={logo.alt}
+                        class="logo-img {logo.bg ? 'rounded-xl' : ''}"
+                    />
+                </div>
+            {/each}
+            <!-- Duplicate for seamless loop -->
+            {#each logos as logo}
+                <div class="logo-item">
+                    <img
+                        src={logo.src}
+                        alt={logo.alt}
+                        class="logo-img {logo.bg ? 'rounded-xl' : ''}"
+                    />
+                </div>
             {/each}
         </div>
     </div>
@@ -223,3 +250,69 @@
         </div>
     </div>
 </section>
+
+<style>
+    .marquee-track {
+        width: 100%;
+        overflow: hidden;
+        mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 12%,
+            black 88%,
+            transparent 100%
+        );
+        -webkit-mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 12%,
+            black 88%,
+            transparent 100%
+        );
+    }
+
+    .marquee-inner {
+        display: flex;
+        align-items: center;
+        gap: 3.5rem;
+        width: max-content;
+        animation: marquee-scroll 22s linear infinite;
+    }
+
+    .marquee-inner:hover {
+        animation-play-state: paused;
+    }
+
+    .logo-item {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-img {
+        height: 52px;
+        width: auto;
+        max-width: 160px;
+        object-fit: contain;
+        filter: grayscale(100%);
+        opacity: 0.55;
+        transition:
+            filter 0.3s ease,
+            opacity 0.3s ease;
+    }
+
+    .logo-img:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+    }
+
+    @keyframes marquee-scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+</style>
