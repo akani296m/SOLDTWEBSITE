@@ -1,0 +1,125 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+
+/* ─── PP Mori Local Fonts ─── */
+@font-face {
+	font-family: 'PPMori';
+	src: url('/fonts/PPMori-Extralight.woff2') format('woff2');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'PPMori';
+	src: url('/fonts/PPMori-ExtralightItalic.woff2') format('woff2');
+	font-weight: 200;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'PPMori';
+	src: url('/fonts/PPMori-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'PPMori';
+	src: url('/fonts/PPMori-RegularItalic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'PPMori';
+	src: url('/fonts/PPMori-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'PPMori';
+	src: url('/fonts/PPMori-SemiBoldItalic.woff2') format('woff2');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'PPMori';
+	src: url('/fonts/PPMori-Black.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ─── Tailwind v4 Theme ─── */
+@theme {
+	/* Brand Colors */
+	--color-primary: #777DD3;
+	--color-primary-light: #9498e0;
+	--color-primary-dark: #5a5fb8;
+	--color-primary-muted: #777DD31A;
+
+	--color-near-black: #09090b;
+	--color-surface: #FAFAFA;
+	--color-surface-raised: #FFFFFF;
+	--color-surface-dim: #F0F0F5;
+
+	--color-zinc-50: #fafafa;
+	--color-zinc-100: #f4f4f5;
+	--color-zinc-200: #e4e4e7;
+	--color-zinc-300: #d4d4d8;
+	--color-zinc-400: #a1a1aa;
+	--color-zinc-500: #71717a;
+	--color-zinc-600: #52525b;
+	--color-zinc-700: #3f3f46;
+	--color-zinc-800: #27272a;
+	--color-zinc-900: #18181b;
+	--color-zinc-950: #09090b;
+
+	/* Typography */
+	--font-display: 'PPMori', ui-sans-serif, system-ui, sans-serif;
+	--font-body: 'PPMori', ui-sans-serif, system-ui, sans-serif;
+	--font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+	/* Container */
+	--container-2xl: 1280px;
+}
+
+/* ─── Base Styles ─── */
+@layer base {
+	html {
+		font-family: var(--font-body);
+		color: var(--color-near-black);
+		background-color: var(--color-surface);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		scroll-behavior: smooth;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: var(--font-display);
+		font-weight: 700;
+		letter-spacing: -0.02em;
+		line-height: 1.15;
+	}
+
+	h1 { font-size: clamp(2.25rem, 5vw, 3.75rem); }
+	h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); }
+	h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+
+	p, li {
+		line-height: 1.7;
+	}
+
+	::selection {
+		background-color: var(--color-primary);
+		color: white;
+	}
+}
