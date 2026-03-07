@@ -63,13 +63,6 @@
         },
     ];
 
-    const stats = [
-        { value: "2,500+", label: "Active stores" },
-        { value: "R12M+", label: "Monthly GMV" },
-        { value: "99.9%", label: "Uptime" },
-        { value: "< 2min", label: "Store setup" },
-    ];
-
     const steps = [
         {
             num: "01",
@@ -123,7 +116,6 @@
             question: "What if I already have a store on another platform?",
             answer: "We're building import tools to make migration painless. In the meantime, our team can help you move your products manually — reach out and we'll sort you out.",
         },
-    
     ];
 
     const trustBadges = [
@@ -334,26 +326,6 @@
             <p class="mt-6 text-sm text-zinc-400">
                 No credit card required · 7-day free trial · Cancel anytime
             </p>
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- STATS STRIP                                                   -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<section class="border-y border-zinc-200/60 bg-white">
-    <div class="mx-auto max-w-7xl px-6 py-12">
-        <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
-            {#each stats as stat}
-                <div class="text-center">
-                    <p
-                        class="font-display text-3xl font-bold text-near-black md:text-4xl"
-                    >
-                        {stat.value}
-                    </p>
-                    <p class="mt-1 text-sm text-zinc-500">{stat.label}</p>
-                </div>
-            {/each}
         </div>
     </div>
 </section>
