@@ -12,7 +12,7 @@
             icon: "💸",
             title: "SA Payment Gateways",
             description:
-                "Accept payments via PayFast, SnapScan, instant EFT, and more. Built for how South Africans actually pay.",
+                "Accept payments via Major SA Payment Gateways, SnapScan, instant EFT, and more. Built for how South Africans actually pay.",
         },
         {
             icon: "🚚",
@@ -82,7 +82,7 @@
             num: "02",
             title: "Add products and connect payments",
             description:
-                "Upload your products (or import them). Toggle on PayFast, and you're accepting Rand from day one — no third-party duct tape required.",
+                "Upload your products (or import them). Toggle on SOLDT Payments, and you're accepting Rand from day one — no third-party duct tape required.",
             icon: "📦",
         },
         {
@@ -101,7 +101,7 @@
         },
         {
             question: "How do my customers pay?",
-            answer: "Through PayFast — South Africa's most trusted payment gateway. Your customers can pay with credit card, instant EFT, SnapScan, and more. Payouts go straight to your bank account.",
+            answer: "Through SOLDT Payments — Our Built in Payment Gateway or you can also connect any third party party gateway : such as Payfast, Paystack , Yoco and etc ",
         },
         {
             question: "Can I use my own domain name?",
@@ -123,10 +123,7 @@
             question: "What if I already have a store on another platform?",
             answer: "We're building import tools to make migration painless. In the meantime, our team can help you move your products manually — reach out and we'll sort you out.",
         },
-        {
-            question: "Is my store data safe?",
-            answer: "Yes. SOLDT uses encrypted connections, secure payment processing through PayFast, and your data is hosted on enterprise-grade infrastructure. We never sell or share your information.",
-        },
+    
     ];
 
     const trustBadges = [
@@ -138,9 +135,9 @@
         },
         {
             icon: "✅",
-            title: "PayFast Verified",
+            title: "SOLDT Payments Verified",
             description:
-                "Payments processed through South Africa's leading gateway. PCI-DSS compliant.",
+                "Payments processed through Secure Payment Gateway. PCI-DSS compliant.",
         },
         {
             icon: "⬆️",
@@ -170,7 +167,7 @@
         {
             feature: "SA payments (EFT, SnapScan)",
             shopify: "Requires third-party app",
-            soldt: "Built in via PayFast",
+            soldt: "Built in via SA Payment Gateway",
         },
         {
             feature: "Shipping tools",
@@ -646,7 +643,7 @@
                     Everything included:
                 </p>
                 <ul class="mt-4 space-y-3">
-                    {#each ["Storefront + custom domain", "Built-in payments via PayFast", "Shipping labels & tracking", "Reviews, bundles, email tools", "No hidden app fees. No plugin tax."] as item}
+                    {#each ["Storefront + custom domain", "Built-in payments ", "Shipping labels & tracking", "Reviews, bundles, email tools", "No hidden app fees. No plugin tax."] as item}
                         <li
                             class="flex items-center gap-3 text-sm text-zinc-600"
                         >
