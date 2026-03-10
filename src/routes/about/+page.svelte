@@ -67,6 +67,101 @@
         name="description"
         content="Learn the story behind SOLDT, the ecommerce platform built for South African businesses. Discover our mission to make starting an online store faster and easier."
     />
+    {@html `<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://soldt.co.za/about/#webpage",
+      "url": "https://soldt.co.za/about",
+      "name": "About SOLDT",
+      "headline": "South Africa deserves faster commerce.",
+      "description": "Learn why SOLDT was built to help South African merchants launch online stores faster with local commerce infrastructure, built-in tools, and storefronts designed for how South Africans shop.",
+      "isPartOf": {
+        "@id": "https://soldt.co.za/#website"
+      },
+      "about": {
+        "@id": "https://soldt.co.za/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://soldt.co.za/#software"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://soldt.co.za/#organization",
+      "name": "SOLDT",
+      "url": "https://soldt.co.za",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://soldt.co.za/soldt-assets/title(3).svg"
+      },
+      "description": "SOLDT is a South African commerce platform built to help merchants launch, run, and grow online stores faster with local infrastructure and built-in tools.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "South Africa"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://soldt.co.za/#website",
+      "url": "https://soldt.co.za",
+      "name": "SOLDT",
+      "publisher": {
+        "@id": "https://soldt.co.za/#organization"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://soldt.co.za/#software",
+      "name": "SOLDT",
+      "url": "https://soldt.co.za",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "SOLDT is an all-in-one ecommerce platform built for South African sellers, with local payments, shipping, domains, reviews, email marketing, analytics, and storefronts designed for the South African market.",
+      "brand": {
+        "@id": "https://soldt.co.za/#organization"
+      },
+      "creator": {
+        "@id": "https://soldt.co.za/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "South Africa"
+      },
+      "featureList": [
+        "Local commerce infrastructure for South African sellers",
+        "Built-in payments",
+        "Built-in shipping tools",
+        ".co.za domain support",
+        "Reviews included",
+        "Email marketing included",
+        "Analytics included",
+        "Storefronts designed for South African shoppers"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://soldt.co.za/about/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://soldt.co.za/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://soldt.co.za/about"
+        }
+      ]
+    }
+  ]
+}
+</script>`}
 </svelte:head>
 
 <!-- ───── Hero ───── -->
