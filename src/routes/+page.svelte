@@ -272,8 +272,8 @@
         data-key="kGkBmiYupP+0/f7uUp9zRg"
         async
     ></script>
-    <script type="application/ld+json">
-        {@html `{
+    {@html `<script type="application/ld+json">
+{
  "@context": "https://schema.org",
  "@graph": [
 
@@ -320,8 +320,8 @@
   }
 
  ]
-}`}
-    </script>
+}
+</script>`}
 </svelte:head>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->

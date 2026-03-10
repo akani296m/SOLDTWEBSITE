@@ -184,9 +184,9 @@
                                     WhatsApp
                                 </p>
                                 <a
-                                    href="https://wa.me/27600000000"
+                                    href="https://wa.me/27604324324"
                                     class="text-sm text-primary hover:underline"
-                                    >+27 60 000 0000</a
+                                    >+27 60 432 4324</a
                                 >
                             </div>
                         </li>
