@@ -289,20 +289,14 @@
 
     <div class="relative mx-auto max-w-7xl px-6">
         <div class="mx-auto max-w-3xl text-center">
-            <div
-                class="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary-muted px-4 py-1.5 text-sm font-medium text-primary"
-            >
-                <span class="h-2 w-2 rounded-full bg-primary animate-pulse"
-                ></span>
-                Now in public beta
-            </div>
+
 
             <h1 class="text-near-black">
                 Sell online.
                 <span
                     class="bg-linear-to-r from-primary to-primary-dark bg-clip-text text-transparent"
                 >
-                    Built for Africa.
+                    Built for South Africa.
                 </span>
             </h1>
 
@@ -369,7 +363,7 @@
                         <p
                             class="mt-4 font-display text-lg font-bold text-near-black"
                         >
-                            Real dashboard. Coming soon.
+                             dashboard. Coming soon.
                         </p>
                         <p class="mt-1 text-sm text-zinc-400">
                             Full product screenshot dropping with v1 launch
@@ -443,7 +437,7 @@
                 >Start selling for free</Button
             >
             <p class="mt-4 text-sm text-zinc-400">
-                No credit card. No 14-day countdown. Just build.
+                No credit card. Just build.
             </p>
         </div>
     </div>

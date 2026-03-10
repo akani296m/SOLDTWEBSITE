@@ -4,7 +4,7 @@
     const plans = [
         {
             name: "Growth",
-            price: "R299",
+            price: "R330",
             period: "/month",
             description: "For serious sellers ready to scale.",
             features: [
