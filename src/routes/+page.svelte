@@ -272,6 +272,56 @@
         data-key="kGkBmiYupP+0/f7uUp9zRg"
         async
     ></script>
+    <script type="application/ld+json">
+        {@html `{
+ "@context": "https://schema.org",
+ "@graph": [
+
+  {
+   "@type": "Organization",
+   "name": "SOLDT",
+   "url": "https://soldt.co.za",
+   "logo": "https://soldt.co.za/soldt-assets/title(3).svg",
+   "description": "SOLDT is South Africa’s all-in-one ecommerce platform designed for local merchants to launch, run and scale online stores.",
+   "sameAs": [
+     "https://www.instagram.com/soldtza",
+     "https://www.tiktok.com/@soldtza"
+   ]
+  },
+
+  {
+   "@type": "WebSite",
+   "name": "SOLDT",
+   "url": "https://soldt.co.za",
+   "description": "South Africa’s all-in-one ecommerce platform built for local merchants.",
+   "publisher": {
+     "@type": "Organization",
+     "name": "SOLDT"
+   }
+  },
+
+  {
+   "@type": "SoftwareApplication",
+   "name": "SOLDT",
+   "applicationCategory": "BusinessApplication",
+   "operatingSystem": "Web",
+   "url": "https://soldt.co.za",
+   "description": "SOLDT is an all-in-one ecommerce platform built for South African sellers with built-in payments, shipping tools, WhatsApp commerce and marketing tools.",
+   "offers": {
+     "@type": "Offer",
+     "price": "330",
+     "priceCurrency": "ZAR",
+     "availability": "https://schema.org/InStock"
+   },
+   "creator": {
+     "@type": "Organization",
+     "name": "SOLDT"
+   }
+  }
+
+ ]
+}`}
+    </script>
 </svelte:head>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
@@ -289,8 +339,6 @@
 
     <div class="relative mx-auto max-w-7xl px-6">
         <div class="mx-auto max-w-3xl text-center">
-
-
             <h1 class="text-near-black">
                 Sell online.
                 <span
@@ -363,7 +411,7 @@
                         <p
                             class="mt-4 font-display text-lg font-bold text-near-black"
                         >
-                             dashboard. Coming soon.
+                            dashboard. Coming soon.
                         </p>
                         <p class="mt-1 text-sm text-zinc-400">
                             Full product screenshot dropping with v1 launch
