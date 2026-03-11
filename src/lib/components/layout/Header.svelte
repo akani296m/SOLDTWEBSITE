@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { page } from '$app/state';
-	import { mainNav } from '$lib/data/navigation';
+	import { page } from "$app/state";
+	import { mainNav } from "$lib/data/navigation";
 
 	let mobileOpen = $state(false);
 
@@ -18,7 +18,10 @@
 >
 	<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 		<!-- Logo -->
-		<a href="/" class="flex items-center gap-2 font-display text-xl font-bold tracking-tight">
+		<a
+			href="/"
+			class="flex items-center gap-2 font-display text-xl font-bold tracking-tight"
+		>
 			<span
 				class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-sm font-black text-white"
 			>
@@ -33,7 +36,9 @@
 				<a
 					href={item.href}
 					class="text-sm font-medium text-zinc-600 transition-colors duration-200 hover:text-primary
-						{page.url.pathname === item.href || (item.href !== '/' && page.url.pathname.startsWith(item.href.split('#')[0]))
+						{page.url.pathname === item.href ||
+					(item.href !== '/' &&
+						page.url.pathname.startsWith(item.href.split('#')[0]))
 						? 'text-primary'
 						: ''}"
 				>
@@ -59,12 +64,32 @@
 				aria-expanded={mobileOpen}
 			>
 				{#if mobileOpen}
-					<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+					<svg
+						class="h-5 w-5"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M6 18L18 6M6 6l12 12"
+						/>
 					</svg>
 				{:else}
-					<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					<svg
+						class="h-5 w-5"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 6h16M4 12h16M4 18h16"
+						/>
 					</svg>
 				{/if}
 			</button>
