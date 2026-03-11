@@ -6,7 +6,7 @@
     <title>Contact — SOLDT</title>
     <meta
         name="description"
-        content="Get in touch with the SOLDT team. We'd love to hear from you."
+        content="Contact SOLDT — South Africa's all-in-one ecommerce platform. Reach us by email, WhatsApp, or our contact form. Based in Johannesburg, we're here to help you launch and grow your online store."
     />
 </svelte:head>
 

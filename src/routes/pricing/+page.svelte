@@ -45,7 +45,7 @@
     <title>Pricing — SOLDT</title>
     <meta
         name="description"
-        content="Simple, transparent pricing for every stage of your e-commerce journey. Start free."
+        content="SOLDT pricing starts at R330/month — one simple plan for South African sellers with built-in payments, shipping, and marketing tools. No hidden app fees. Start free for 7 days."
     />
 </svelte:head>
 

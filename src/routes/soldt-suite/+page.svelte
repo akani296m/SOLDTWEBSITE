@@ -101,7 +101,7 @@
 </script>
 
 <svelte:head>
-    <title>: SOLDT Suite – Built-In Conversion Tools for South African Online Stores</title>
+    <title>SOLDT Suite – Built-In Conversion Tools for South African Online Stores</title>
     <meta
         name="description"
         content="The SOLDT Suite includes the essential ecommerce apps every store needs — bundles, reviews, email marketing, product tabs, and live chat. Built to help South African stores convert more visitors into customers."

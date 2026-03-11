@@ -279,10 +279,18 @@
 
   {
    "@type": "Organization",
+   "@id": "https://soldt.co.za/#organization",
    "name": "SOLDT",
    "url": "https://soldt.co.za",
-   "logo": "https://soldt.co.za/soldt-assets/title(3).svg",
-   "description": "SOLDT is South Africa’s all-in-one ecommerce platform designed for local merchants to launch, run and scale online stores.",
+   "logo": {
+     "@type": "ImageObject",
+     "url": "https://soldt.co.za/soldt-assets/title(3).svg"
+   },
+   "description": "SOLDT is South Africa's all-in-one ecommerce platform designed for local merchants to launch, run and scale online stores.",
+   "areaServed": {
+     "@type": "Country",
+     "name": "South Africa"
+   },
    "sameAs": [
      "https://www.instagram.com/soldtza",
      "https://www.tiktok.com/@soldtza"
@@ -291,32 +299,45 @@
 
   {
    "@type": "WebSite",
+   "@id": "https://soldt.co.za/#website",
    "name": "SOLDT",
    "url": "https://soldt.co.za",
-   "description": "South Africa’s all-in-one ecommerce platform built for local merchants.",
+   "description": "South Africa's all-in-one ecommerce platform built for local merchants.",
    "publisher": {
-     "@type": "Organization",
-     "name": "SOLDT"
+     "@id": "https://soldt.co.za/#organization"
    }
   },
 
   {
    "@type": "SoftwareApplication",
+   "@id": "https://soldt.co.za/#software",
    "name": "SOLDT",
    "applicationCategory": "BusinessApplication",
    "operatingSystem": "Web",
    "url": "https://soldt.co.za",
    "description": "SOLDT is an all-in-one ecommerce platform built for South African sellers with built-in payments, shipping tools, WhatsApp commerce and marketing tools.",
+   "brand": {
+     "@id": "https://soldt.co.za/#organization"
+   },
+   "creator": {
+     "@id": "https://soldt.co.za/#organization"
+   },
    "offers": {
      "@type": "Offer",
      "price": "330",
      "priceCurrency": "ZAR",
      "availability": "https://schema.org/InStock"
-   },
-   "creator": {
-     "@type": "Organization",
-     "name": "SOLDT"
    }
+  },
+
+  {
+   "@type": "WebPage",
+   "@id": "https://soldt.co.za/#webpage",
+   "url": "https://soldt.co.za",
+   "name": "SOLDT – Sell Online in South Africa | All-in-One eCommerce Platform",
+   "isPartOf": { "@id": "https://soldt.co.za/#website" },
+   "about": { "@id": "https://soldt.co.za/#organization" },
+   "mainEntity": { "@id": "https://soldt.co.za/#software" }
   }
 
  ]
