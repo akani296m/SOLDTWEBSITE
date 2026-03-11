@@ -8,6 +8,29 @@ tags: ["Guide", "Getting Started", "South Africa"]
 published: true
 ---
 
+<script>
+    import BlogFaq from '$lib/components/blog/BlogFaq.svelte';
+
+    const faqs = [
+        {
+            question: "Do I need a business license to start an online store in South Africa?",
+            answer: "No. Many online stores begin as small businesses or sole proprietors. As your store grows, you can register a company with the CIPC if needed."
+        },
+        {
+            question: "What is the best ecommerce platform in South Africa?",
+            answer: "The best platform depends on your needs. Global platforms like Shopify are widely used, but platforms built specifically for South African sellers — such as <a href='/'>SOLDT</a> — often make it easier to integrate local payments and shipping."
+        },
+        {
+            question: "How much does it cost to start an online store in South Africa?",
+            answer: "Many ecommerce platforms allow you to start a store from <strong>R300–R800 per month</strong>, plus payment processing fees when orders are placed. SOLDT starts at R330/month with a 7-day free trial."
+        },
+        {
+            question: "Can I sell on WhatsApp and still have an online store?",
+            answer: "Yes. Many South African businesses take orders through WhatsApp while directing customers to a checkout page to complete payment and shipping details."
+        }
+    ];
+</script>
+
 Starting an online store in South Africa has never been more possible.
 
 More South Africans are shopping online than ever before — from skincare and fashion to electronics and home goods. But while the opportunity is huge, many people still don't know where to start.
@@ -229,21 +252,7 @@ SOLDT is the only platform on this list built specifically for South African sel
 
 ## FAQ: Starting an Online Store in South Africa
 
-### Do I need a business license to start an online store in South Africa?
-
-No. Many online stores begin as small businesses or sole proprietors. As your store grows, you can register a company with the CIPC if needed.
-
-### What is the best ecommerce platform in South Africa?
-
-The best platform depends on your needs. Global platforms like Shopify are widely used, but platforms built specifically for South African sellers — such as [SOLDT](/) — often make it easier to integrate local payments and shipping.
-
-### How much does it cost to start an online store in South Africa?
-
-Many ecommerce platforms allow you to start a store from **R300–R800 per month**, plus payment processing fees when orders are placed. SOLDT starts at R330/month with a 7-day free trial.
-
-### Can I sell on WhatsApp and still have an online store?
-
-Yes. Many South African businesses take orders through WhatsApp while directing customers to a checkout page to complete payment and shipping details.
+<BlogFaq {faqs} />
 
 ---
 
