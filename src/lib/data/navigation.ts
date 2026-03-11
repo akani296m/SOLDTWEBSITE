@@ -11,6 +11,7 @@ export const footerNav = {
     product: [
         { label: 'Features', href: '/#features' },
         { label: 'Pricing', href: '/pricing' },
+        { label: 'Domains', href: '/domains' },
         { label: 'Integrations', href: '/#integrations' },
         { label: 'Roadmap', href: '/about#roadmap' }
     ],
