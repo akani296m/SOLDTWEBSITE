@@ -125,6 +125,164 @@
         name="description"
         content="Answers to the most common questions about SOLDT — pricing, getting started, payments, shipping, and more."
     />
+    {@html `<script type="application/ld+json">${JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What pricing plans does SOLDT offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SOLDT currently offers two plans designed for different stages of business growth. Growth costs R330 per month and is built for new and growing sellers, including everything needed to launch and run a professional online store. Pro costs R799 per month and is designed for established sellers who need more advanced capabilities and higher limits across the SOLDT Suite. Both plans include unlimited products, unlimited orders, and access to the SOLDT Suite of built-in apps. The Pro plan also includes lower transaction fees and higher usage limits across SOLDT apps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does SOLDT cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can start selling online with SOLDT from R330 per month. SOLDT charges a small 0.6% transaction fee on successful orders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there limits on how many products or orders I can have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Both SOLDT plans allow unlimited products and unlimited orders, so you can grow your business without worrying about platform limits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can I launch a store on SOLDT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most merchants can launch their store in under an hour. SOLDT was designed for fast setup. After signing up, you can add products, connect payments, and publish your store without installing apps or configuring complex integrations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to be a web designer or developer to use SOLDT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. SOLDT was built so anyone can launch an online store without technical skills. Your storefront is designed to look professional from day one. For merchants who want more control, SOLDT also includes a simple code editor that allows you to customize your store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do I need to start selling on SOLDT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To start selling online you only need a SOLDT account and a product to sell. You can begin by signing up for a free trial, adding your products, and publishing your store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I connect my own domain to SOLDT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. When you create a store you automatically receive a free .mysoldtstore.co.za domain. You can also connect a domain purchased from a third-party domain provider or purchase and manage a domain directly from your SOLDT dashboard."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to install apps to run my store?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. SOLDT includes the essential tools most stores need built directly into the platform, including Product Reviews, Bundles, Email Marketing, Live Chat, and Product Tabs. This means you do not need to install multiple third-party apps just to run your store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is SOLDT built specifically for South African businesses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. SOLDT was designed specifically for the South African ecommerce market. The platform includes local payment gateway integrations, ZAR currency support, local shipping tools, and infrastructure optimized for South African merchants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize my online store?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can customize your store using themes and built-in settings to match your brand. Advanced users can also use SOLDT's code editor to fully customize their storefront."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I connect my own payment processor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. SOLDT supports a wide range of South African payment gateways with pre-built integrations. Connecting a payment provider takes only a few minutes and does not require any coding."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What payment gateways does SOLDT support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SOLDT integrates with several popular South African payment providers. You can connect supported payment gateways directly from your dashboard using a simple setup process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What currencies does SOLDT support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By default all SOLDT stores operate in South African Rand (ZAR). However merchants can also configure their store to sell in other currencies such as USD, EUR, and AUD."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when I receive an order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When a customer places an order you will receive an email notification and a new order alert inside your dashboard. Your Orders page provides everything you need to manage the order, including customer details, order items, and fulfillment status."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does shipping work on SOLDT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SOLDT Shipping allows merchants to calculate shipping rates from supported carriers, create shipping waybills directly from the dashboard, and track and manage deliveries. You can also use manual fulfillment if you prefer. Once an order is fulfilled, your customer automatically receives shipping updates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I move my store from another platform to SOLDT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. SOLDT supports easy store migration from other ecommerce platforms. You can import products and customers, allowing you to move your business to SOLDT without starting from scratch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens after my free trial ends?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "After your free trial ends you can choose the plan that best fits your business. Your store, products, and data remain saved, so you can continue running your business without interruption. If you decide not to continue, your store simply becomes inactive."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is SOLDT suitable for beginners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. SOLDT was built to make starting an online business simple. You do not need coding skills or prior ecommerce experience. The platform handles the infrastructure so you can focus on building your store and selling your products."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is SOLDT different from Shopify?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SOLDT was built specifically for South African businesses. Unlike global platforms that rely heavily on third-party apps, SOLDT includes the essential tools needed to run a store in South Africa directly inside the platform. This allows merchants to launch faster, spend less on apps, and manage their entire business from one platform."
+      }
+    }
+  ]
+})}</script>`}
 </svelte:head>
 
 <section class="bg-surface py-24">
