@@ -1,3 +1,6 @@
+import { readdirSync } from 'node:fs';
+import { join } from 'node:path';
+
 /**
  * IndexNow submission script for SOLDT
  *
@@ -14,6 +17,10 @@
 
 const KEY = '7b55f0976a8346729af856206c035cf2';
 const HOST = 'www.soldt.co.za';
+const BLOG_POSTS_DIR = join(process.cwd(), 'src/routes/blog/_posts');
+const blogSlugs = readdirSync(BLOG_POSTS_DIR)
+    .filter((file) => file.endsWith('.md'))
+    .map((file) => file.replace(/\.md$/, ''));
 
 const URLS = [
     `https://${HOST}/`,
@@ -22,10 +29,13 @@ const URLS = [
     `https://${HOST}/faq`,
     `https://${HOST}/soldt-suite`,
     `https://${HOST}/domains`,
+    `https://${HOST}/migrate`,
     `https://${HOST}/contact`,
     `https://${HOST}/privacy`,
+    `https://${HOST}/terms`,
     `https://${HOST}/blog`,
     `https://${HOST}/sitemap.xml`,
+    ...blogSlugs.map((slug) => `https://${HOST}/blog/${slug}`),
 ];
 
 async function submitIndexNow() {

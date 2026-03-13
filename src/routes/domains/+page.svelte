@@ -59,54 +59,54 @@
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://soldt.co.za/domains#webpage",
-      "url": "https://soldt.co.za/domains",
+      "@id": "https://www.soldt.co.za/domains#webpage",
+      "url": "https://www.soldt.co.za/domains",
       "name": "SOLDT Domains | Buy and Connect a Domain for Your Store",
       "description": "Search, buy, and connect your domain directly inside SOLDT. Launch your online store with a professional domain in minutes with no technical setup required.",
       "isPartOf": {
-        "@id": "https://soldt.co.za/#website"
+        "@id": "https://www.soldt.co.za/#website"
       },
       "about": {
-        "@id": "https://soldt.co.za/#organization"
+        "@id": "https://www.soldt.co.za/#organization"
       },
       "publisher": {
-        "@id": "https://soldt.co.za/#organization"
+        "@id": "https://www.soldt.co.za/#organization"
       },
       "mainEntity": {
-        "@id": "https://soldt.co.za/domains#software"
+        "@id": "https://www.soldt.co.za/domains#software"
       },
       "breadcrumb": {
-        "@id": "https://soldt.co.za/domains#breadcrumb"
+        "@id": "https://www.soldt.co.za/domains#breadcrumb"
       }
     },
     {
       "@type": "WebSite",
-      "@id": "https://soldt.co.za/#website",
-      "url": "https://soldt.co.za/",
+      "@id": "https://www.soldt.co.za/#website",
+      "url": "https://www.soldt.co.za/",
       "name": "SOLDT",
       "publisher": {
-        "@id": "https://soldt.co.za/#organization"
+        "@id": "https://www.soldt.co.za/#organization"
       }
     },
     {
       "@type": "Organization",
-      "@id": "https://soldt.co.za/#organization",
+      "@id": "https://www.soldt.co.za/#organization",
       "name": "SOLDT",
-      "url": "https://soldt.co.za/",
+      "url": "https://www.soldt.co.za/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://soldt.co.za/soldt-assets/title(3).svg"
+        "url": "https://www.soldt.co.za/soldt-assets/title(3).svg"
       }
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://soldt.co.za/domains#software",
+      "@id": "https://www.soldt.co.za/domains#software",
       "name": "SOLDT Domains",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
-      "url": "https://soldt.co.za/domains",
+      "url": "https://www.soldt.co.za/domains",
       "provider": {
-        "@id": "https://soldt.co.za/#organization"
+        "@id": "https://www.soldt.co.za/#organization"
       },
       "description": "SOLDT Domains lets merchants search, buy, and connect domains directly inside their dashboard. It includes the core features expected from professional domain registrars, including DNS management, SSL security, forwarding, renewals, and ownership protection.",
       "featureList": [
@@ -122,7 +122,7 @@
       ],
       "offers": {
         "@type": "Offer",
-        "url": "https://soldt.co.za/domains",
+        "url": "https://www.soldt.co.za/domains",
         "availability": "https://schema.org/InStock",
         "priceCurrency": "ZAR",
         "category": "Domain registration and connection"
@@ -130,19 +130,19 @@
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://soldt.co.za/domains#breadcrumb",
+      "@id": "https://www.soldt.co.za/domains#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://soldt.co.za/"
+          "item": "https://www.soldt.co.za/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Domains",
-          "item": "https://soldt.co.za/domains"
+          "item": "https://www.soldt.co.za/domains"
         }
       ]
     }

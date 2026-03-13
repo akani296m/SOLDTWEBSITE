@@ -41,15 +41,15 @@
         "author": {
             "@type": "Organization",
             "name": "SOLDT",
-            "@id": "https://soldt.co.za/#organization"
+            "@id": "https://www.soldt.co.za/#organization"
         },
         "publisher": {
             "@type": "Organization",
             "name": "SOLDT",
-            "@id": "https://soldt.co.za/#organization",
+            "@id": "https://www.soldt.co.za/#organization",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://soldt.co.za/soldt-assets/title(3).svg"
+                "url": "https://www.soldt.co.za/soldt-assets/title(3).svg"
             }
         }
     })}</script>`}

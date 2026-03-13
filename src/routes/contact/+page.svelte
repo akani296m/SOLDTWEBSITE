@@ -1,12 +1,13 @@
 <script lang="ts">
     import Button from "$lib/components/ui/Button.svelte";
+    import { SUPPORT_EMAIL } from "$lib/constants/site";
 </script>
 
 <svelte:head>
     <title>Contact — SOLDT</title>
     <meta
         name="description"
-        content="Contact SOLDT — South Africa's all-in-one ecommerce platform. Reach us by email, WhatsApp, or our contact form. Based in Johannesburg, we're here to help you launch and grow your online store."
+        content="Contact SOLDT — South Africa's all-in-one ecommerce platform. Reach us by email or WhatsApp. Based in Johannesburg, we're here to help you launch and grow your online store."
     />
 </svelte:head>
 
@@ -21,81 +22,32 @@
         </div>
 
         <div class="mx-auto mt-16 grid max-w-5xl gap-12 md:grid-cols-2">
-            <!-- Contact Form -->
             <div
                 class="rounded-2xl border border-zinc-200/60 bg-white p-8 shadow-sm"
             >
                 <h2 class="text-xl font-bold text-near-black">
-                    Send us a message
+                    Email us directly
                 </h2>
-                <form class="mt-6 space-y-5" action="/contact" method="POST">
-                    <div>
-                        <label
-                            for="name"
-                            class="mb-1.5 block text-sm font-medium text-zinc-700"
-                            >Name</label
-                        >
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                            class="w-full rounded-lg border border-zinc-200 bg-surface px-4 py-3 text-sm text-near-black placeholder:text-zinc-400 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
-                            placeholder="Your name"
-                        />
-                    </div>
-                    <div>
-                        <label
-                            for="email"
-                            class="mb-1.5 block text-sm font-medium text-zinc-700"
-                            >Email</label
-                        >
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                            class="w-full rounded-lg border border-zinc-200 bg-surface px-4 py-3 text-sm text-near-black placeholder:text-zinc-400 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
-                            placeholder="you@example.com"
-                        />
-                    </div>
-                    <div>
-                        <label
-                            for="subject"
-                            class="mb-1.5 block text-sm font-medium text-zinc-700"
-                            >Subject</label
-                        >
-                        <select
-                            id="subject"
-                            name="subject"
-                            class="w-full rounded-lg border border-zinc-200 bg-surface px-4 py-3 text-sm text-near-black focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
-                        >
-                            <option>General Enquiry</option>
-                            <option>Partnership</option>
-                            <option>Support</option>
-                            <option>Press / Media</option>
-                            <option>Careers</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label
-                            for="message"
-                            class="mb-1.5 block text-sm font-medium text-zinc-700"
-                            >Message</label
-                        >
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="4"
-                            required
-                            class="w-full rounded-lg border border-zinc-200 bg-surface px-4 py-3 text-sm text-near-black placeholder:text-zinc-400 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all resize-none"
-                            placeholder="Tell us what's on your mind..."
-                        ></textarea>
-                    </div>
-                    <Button variant="primary" size="md" class="w-full">
-                        Send Message
-                    </Button>
-                </form>
+                <p class="mt-4 text-sm leading-relaxed text-zinc-500">
+                    Send your questions, partnership requests, or support needs to our team and we'll get back to you as soon as we can.
+                </p>
+                <div class="mt-6 rounded-2xl border border-zinc-200 bg-surface p-5">
+                    <p class="text-sm font-medium text-near-black">Email address</p>
+                    <a
+                        href={`mailto:${SUPPORT_EMAIL}`}
+                        class="mt-2 inline-flex text-sm text-primary hover:underline"
+                    >
+                        {SUPPORT_EMAIL}
+                    </a>
+                </div>
+                <Button
+                    href={`mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent("SOLDT enquiry")}`}
+                    variant="primary"
+                    size="md"
+                    class="mt-6 w-full"
+                >
+                    Open Email App
+                </Button>
             </div>
 
             <!-- Contact Info -->
@@ -129,9 +81,9 @@
                                     Email
                                 </p>
                                 <a
-                                    href="mailto:support@soldt.co.za"
+                                    href={`mailto:${SUPPORT_EMAIL}`}
                                     class="text-sm text-primary hover:underline"
-                                    >support@soldt.co.za</a
+                                    >{SUPPORT_EMAIL}</a
                                 >
                             </div>
                         </li>

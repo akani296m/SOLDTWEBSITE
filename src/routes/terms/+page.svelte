@@ -257,7 +257,7 @@
         border-top: 1px solid #e4e4e7;
     }
 
-    .prose-policy h3 {
+    :global(.prose-policy h3) {
         font-size: 1.0625rem;
         font-weight: 600;
         color: #09090b;
@@ -296,7 +296,4 @@
         margin-top: 0;
     }
 
-    .callout ul {
-        margin-top: 0.5rem;
-    }
 </style>

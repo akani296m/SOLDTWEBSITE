@@ -11,6 +11,20 @@
 	function closeMobile() {
 		mobileOpen = false;
 	}
+
+	function isActive(href: string) {
+		const [path] = href.split("#");
+		const routePath = path || "/";
+
+		if (routePath === "/") {
+			return page.url.pathname === "/";
+		}
+
+		return (
+			page.url.pathname === routePath ||
+			page.url.pathname.startsWith(`${routePath}/`)
+		);
+	}
 </script>
 
 <header
@@ -36,11 +50,7 @@
 				<a
 					href={item.href}
 					class="text-sm font-medium text-zinc-600 transition-colors duration-200 hover:text-primary
-						{page.url.pathname === item.href ||
-					(item.href !== '/' &&
-						page.url.pathname.startsWith(item.href.split('#')[0]))
-						? 'text-primary'
-						: ''}"
+						{isActive(item.href) ? 'text-primary' : ''}"
 				>
 					{item.label}
 				</a>

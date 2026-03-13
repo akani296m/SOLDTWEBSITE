@@ -100,7 +100,7 @@
             questions: [
                 {
                     q: "Can I move my store from another platform to SOLDT?",
-                    a: "Yes. SOLDT supports easy store migration from other ecommerce platforms. You can import your products and customers, so you can move your business to SOLDT without starting from scratch. Visit soldt.co.za/migrate for more information.",
+                    a: "Yes. SOLDT supports easy store migration from other ecommerce platforms. You can import your products and customers, so you can move your business to SOLDT without starting from scratch. Visit https://www.soldt.co.za/migrate for more information.",
                 },
                 {
                     q: "What happens after my free trial ends?",
