@@ -266,6 +266,20 @@
         name="description"
         content="SOLDT is South Africa's all-in-one eCommerce platform. Launch your online store, accept payments, manage shipping, and grow your brand — all from one place. Start free."
     />
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1261072995392957');
+        fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
     <!-- Ahrefs Analytics -->
     <script
         src="https://analytics.ahrefs.com/analytics.js"
@@ -345,6 +359,16 @@
 </script>`}
 </svelte:head>
 
+<noscript>
+    <img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=1261072995392957&ev=PageView&noscript=1"
+        alt=""
+    />
+</noscript>
+
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!-- HERO                                                          -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
@@ -423,22 +447,11 @@
                         >admin.soldt.co.za</span
                     >
                 </div>
-                <!-- Dashboard placeholder -->
-                <div
-                    class="flex min-h-[320px] items-center justify-center bg-linear-to-br from-primary/5 to-primary/10 p-12 md:min-h-[420px]"
-                >
-                    <div class="text-center">
-                        <p class="text-4xl">📊</p>
-                        <p
-                            class="mt-4 font-display text-lg font-bold text-near-black"
-                        >
-                            dashboard. Coming soon.
-                        </p>
-                        <p class="mt-1 text-sm text-zinc-400">
-                            Full product screenshot dropping with v1 launch
-                        </p>
-                    </div>
-                </div>
+                <img
+                    src="/soldt-assets/dashboard.png"
+                    alt="SOLDT dashboard overview"
+                    class="block min-h-[320px] w-full object-cover md:min-h-[420px]"
+                />
             </div>
 
             <!-- Floating stat badges -->
