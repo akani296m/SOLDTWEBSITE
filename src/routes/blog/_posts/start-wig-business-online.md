@@ -34,7 +34,7 @@ published: true
         },
         {
             question: "Can I sell wigs on SOLDT?",
-            answer: "Yes. SOLDT is built for South African sellers and supports any product type, including wigs. You can list unlimited wig styles with multiple variations, accept payments via major South African payment gateways, manage orders in one dashboard, and collect customer reviews — all without installing third-party apps."
+            answer: "Yes. SOLDT allows merchants to create online stores for a wide range of products, including wigs, hair extensions, and beauty products.Wig sellers can easily list their products, add variations such as length, color, and style, and showcase their wigs using product images and videos. SOLDT also includes built-in tools for managing orders, collecting customer reviews, and displaying product feedback to help build trust with potential buyers.Because there are no limits on product listings, wig sellers can create large catalogs with many different wig styles and variations without worrying about restrictions as their business grows.This makes SOLDT a strong option for entrepreneurs looking to start or grow a wig business online."
         }
     ];
 </script>
